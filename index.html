@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SchoolSolver — как в школе</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎓 SchoolSolver</h1>
+    <p>Закинь задание — решим по шагам</p>
+  </header>
+  <main>
+    <section class="subject-tabs">
+      <button class="tab active" data-subject="math">📐 Математика</button>
+      <button class="tab" data-subject="russian">📖 Русский</button>
+      <button class="tab" data-subject="english">🇬🇧 Английский</button>
+    </section>
+    <section class="input-area">
+      <textarea id="taskInput" placeholder="Введи задание..."></textarea>
+      <div class="photo-row">
+        <label class="upload-btn">📷 Фото <input type="file" id="imageInput" accept="image/*" hidden></label>
+        <span id="fileName" class="file-name"></span>
+      </div>
+      <button id="solveBtn">Решить по шагам</button>
+    </section>
+    <section id="result" class="result hidden"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
